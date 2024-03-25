@@ -53,6 +53,13 @@ Encore
         config.corejs = '3.23';
     })
 
+    .autoProvideVariables({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.JQuery': 'jquery',
+        Popper: ['popper.js', 'default'],
+    })
+
     // enables Sass/SCSS support
     //.enableSassLoader()
 

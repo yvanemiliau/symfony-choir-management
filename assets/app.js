@@ -9,3 +9,10 @@
 import './styles/app.css';
 
 import 'bootstrap';
+import 'bootstrap-datepicker';
+
+$(document).on('DOMContentLoaded', () => {
+    $('.datepicker').datepicker({
+        format: 'dd-mm-yyyy',
+    });
+});
